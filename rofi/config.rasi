@@ -1,0 +1,16 @@
+configuration {
+    modi: "drun,run";
+    show-icons: true;           /* <--- ISSO ATIVA OS ÍCONES */
+    icon-theme: "Papirus";      /* <--- ISSO ESCOLHE O TEMA */
+    display-drun: " ";
+    drun-display-format: "{name}";
+    
+    /* Configurações extras para melhorar o comportamento */
+    disable-history: false;
+    sidebar-mode: false;
+}
+
+/* --- ESTILO VISUAL (Para tirar aquele visual cinza antigo) --- */
+@theme "gruvbox-dark-hard" 
+/* O Rofi já vem com alguns temas instalados. 
+   Se der erro, apague a linha @theme ou troque por "glue_pro_blue" */

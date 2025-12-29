@@ -1,0 +1,97 @@
+/* --- CONFIGURAÇÃO GERAL --- */
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font";
+    font-weight: bold;
+    font-size: 14px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: #11111b;
+    color: #cdd6f4;
+}
+
+tooltip {
+    background: #1e1e2e;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #11111b;
+}
+
+/* --- WORKSPACES --- */
+#workspaces button {
+    padding: 0 5px;
+    color: #7f849c;
+    background: transparent;
+}
+
+#workspaces button.active {
+    color: #cba6f7;
+    border-bottom: 2px solid #cba6f7;
+}
+
+#workspaces button:hover {
+    background: #313244;
+    color: #cdd6f4;
+}
+
+/* --- TASKBAR (Apps) --- */
+#taskbar button {
+    padding: 0 10px;
+    margin: 0 4px;
+    border-radius: 10px;
+    background: #313244;
+    color: #cdd6f4;
+}
+
+#taskbar button.active {
+    background: #45475a;
+    border-bottom: 2px solid #89b4fa;
+}
+
+/* --- MÓDULOS (Estilo Unificado) --- */
+#mpris, #pulseaudio, #bluetooth, #backlight, #power-profiles-daemon, #network, #battery, #custom-notification, #clock, #tray, #custom-power {
+    background: #1e1e2e;
+    padding: 0 12px;
+    margin: 4px 2px;
+    border-radius: 6px;
+    color: #cdd6f4;
+}
+
+/* --- CORES POR MÓDULO --- */
+#mpris { color: #a6e3a1; background: #313244; }
+#bluetooth { color: #89b4fa; } /* Azul */
+#backlight { color: #f9e2af; } /* Amarelo (O 100% sem ícone era este aqui) */
+#power-profiles-daemon { color: #a6e3a1; padding-right: 15px; }
+#clock { color: #fab387; }
+#custom-notification { color: #cba6f7; padding-right: 15px; }
+
+/* BATERIA - Cores de Estado */
+#battery.charging, #battery.plugged, #battery.full {
+    color: #a6e3a1; /* Verde quando carrega ou está cheia na tomada */
+}
+
+#battery.warning { color: #fab387; }
+#battery.critical {
+    color: #f38ba8;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/* Botão de Sair */
+#custom-power {
+    color: #f38ba8;
+    background: transparent;
+    font-size: 16px;
+    padding-right: 15px;
+    margin-left: 10px;
+}
+
+@keyframes blink {
+    to { background-color: #f38ba8; color: #181825; }
+}
