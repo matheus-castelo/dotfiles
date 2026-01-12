@@ -1,0 +1,28 @@
+{
+    "security.workspace.trust.untrustedFiles": "newWindow",
+    "files.autoSave": "afterDelay",
+    "explorer.confirmDelete": false,
+    "workbench.colorTheme": "Catppuccin Mocha",
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.fontFamily": "JetBrainsMono Nerd Font",
+    "editor.fontSize": 14,
+    "editor.lineHeight": 1.8,
+    // "editor.rulers": [80,140],
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.renderLineHighlight": "all",
+    "editor.fontLigatures": true,
+    "workbench.editor.labelFormat": "short",
+    "explorer.compactFolders": false,
+    "editor.semanticHighlighting.enabled": false,
+    "breadcrumbs.enabled": false,
+    "workbench.activityBar.location": "top",
+    "editor.minimap.enabled": false,
+    "editor.scrollbar.horizontal": "auto",
+    "editor.scrollbar.vertical": "auto",
+    "workbench.statusBar.visible": false,
+    "editor.wordWrap": "on",
+    "window.customTitleBarVisibility": "windowed",
+
+    
+
+}
